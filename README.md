@@ -10,3 +10,16 @@ Um app de flashcards desenvolvido por alunos do 3º semestre do Instituto Mauá 
 | [Leonardo Formagio Bicudo](https://github.com/Leonardouk) | 24.00257-7 |
 | [Lucas Novaes de Sá Ferreira](https://github.com/Lucasnovaess) | 24.00721-8 |
 | [Vitor Eiken Tanahara](https://github.com/vitoreiken) | 24.00684-0 |
+
+## Passos para a inicialização do projeto
+
+### 1. Acessar a pasta do projeto
+cd flashcard
+
+### 2. Iniciar o projeto com Expo
+npx expo start
+
+### 3. Baixar no celular o app "Expo Go"
+É nele que o flashcard será exibido 
+
+### 4. Scannear o qrcode gerado no terminal do vscode 
