@@ -11,15 +11,24 @@ Um app de flashcards desenvolvido por alunos do 3º semestre do Instituto Mauá 
 | [Lucas Novaes de Sá Ferreira](https://github.com/Lucasnovaess) | 24.00721-8 |
 | [Vitor Eiken Tanahara](https://github.com/vitoreiken) | 24.00684-0 |
 
-## Passos para a inicialização do projeto
-
-### 1. Acessar a pasta do projeto
+## Instalação
+Clone o repositório, mude o diretório e instale as dependências.
+```bash
+git clone https://github.com/Memoria-de-Elefante/flashcard.git
 cd flashcard
+npm i
+```
 
-### 2. Iniciar o projeto com Expo
+## Desenvolvimento
+### Execução
+1. Inicie o servidor de desenvolvimento:
+```bash
 npx expo start
+```
 
-### 3. Baixar no celular o app "Expo Go"
-É nele que o flashcard será exibido 
-
-### 4. Scannear o qrcode gerado no terminal do vscode 
+2. Teste o projeto:
+- Usando o seu dispositivo:
+  - Escaneie o código QR utilizando o app Expo Go (para [Android](https://expo.dev/go?sdkVersion=52&platform=android&device=true) ou [iOS](https://expo.dev/go?sdkVersion=52&platform=ios&device=true)).
+<br></br>
+- Usando um emulador Android ou iOS:
+  - [Configure o seu ambiente.](https://reactnative.dev/docs/set-up-your-environment)
