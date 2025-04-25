@@ -1,0 +1,6 @@
+{
+  "databaseURL": "https://Leonardo-s-workspace-t1va0i.us-east-1.xata.sh/db/PI2025_3_teste",
+  "codegen": {
+    "output": "src/xata.ts"
+  }
+}
