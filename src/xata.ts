@@ -5,6 +5,8 @@ import type {
   SchemaInference,
   XataRecord,
 } from "@xata.io/client";
+import dotenv from 'dotenv';
+dotenv.config()
 
 const tables = [
   {
@@ -14,6 +16,11 @@ const tables = [
         name: "alunos_xata_id_length_xata_id",
         columns: ["xata_id"],
         definition: "CHECK ((length(xata_id) < 256))",
+      },
+      alunos_xata_string_length_nome: {
+        name: "alunos_xata_string_length_nome",
+        columns: ["nome"],
+        definition: "CHECK ((length(nome) <= 2048))",
       },
     },
     foreignKeys: {},
@@ -36,6 +43,14 @@ const tables = [
         unique: true,
         defaultValue: null,
         comment: "",
+      },
+      {
+        name: "nome",
+        type: "string",
+        notNull: true,
+        unique: false,
+        defaultValue: null,
+        comment: '{"xata.type":"string"}',
       },
       {
         name: "senha",
@@ -109,6 +124,9 @@ let instance: XataClient | undefined = undefined;
 export const getXataClient = () => {
   if (instance) return instance;
 
-  instance = new XataClient();
+  instance = new XataClient({
+    apiKey: process.env.XATA_API_KEY,
+    branch: process.env.XATA_BRANCH,
+  })
   return instance;
 };
