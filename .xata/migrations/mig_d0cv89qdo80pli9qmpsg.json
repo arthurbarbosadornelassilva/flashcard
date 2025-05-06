@@ -1,12 +1,12 @@
 {
   "done": true,
   "migration": {
-    "name": "mig_d05fufn1875465e5c5ug",
+    "name": "mig_d0cv89qdo80pli9qmpsg",
     "operations": [
       {
         "add_column": {
           "up": "''",
-          "table": "alunos",
+          "table": "users",
           "column": {
             "name": "senha",
             "type": "text",
@@ -17,8 +17,8 @@
     ]
   },
   "migrationType": "pgroll",
-  "name": "mig_d05fufn1875465e5c5ug",
-  "parent": "mig_d05fubmsrhqeh7cgoc90",
+  "name": "mig_d0cv89qdo80pli9qmpsg",
+  "parent": "mig_d0cv802r9e9qaqkp0g00",
   "schema": "public",
-  "startedAt": "2025-04-25T03:19:27.320434Z"
+  "startedAt": "2025-05-06T11:36:08.148608Z"
 }
