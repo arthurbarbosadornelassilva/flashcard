@@ -1,3 +1,6 @@
+# Memória de Elefante - Projeto Integrador Interdisciplinar (PII)
+Um app de flashcards desenvolvido por alunos do 3º semestre do Instituto Mauá de Tecnologia (IMT) em parceria com o Colégio Poliedro, feito como ferramenta de estudo para auxiliar os alunos a aprimorarem seus conhecimentos.
+
 ## Integrantes
 | Nome                | R.A.       |
 | ------------------- | ---------- |
