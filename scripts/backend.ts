@@ -11,7 +11,7 @@ const PORT: number = Number(process.env.PORT) || 3000;
 // Datbase
 const xata = getXataClient();
 const userFields: SelectableColumn<UsersRecord>[] = ['xata_id', 'nome', 'email', 'senha'];
-const cardFields: SelectableColumn<CardsRecord>[] = ['xata_id', 'user', 'user.nome', 'pergunta', 'resposta', 'materia', 'dificuldade', 'acertos'];
+const cardFields: SelectableColumn<CardsRecord>[] = ['xata_id', 'pergunta', 'resposta', 'materia', 'submateria', 'dificuldade', 'acertos'];
 type aluno = EditableData<SelectedPick<UsersRecord, typeof userFields>>;
 type card = EditableData<SelectedPick<CardsRecord, typeof cardFields>>;
 
